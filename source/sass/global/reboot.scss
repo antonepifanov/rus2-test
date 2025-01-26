@@ -22,7 +22,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 
-  @include _992 {
+  @include _768 {
     font-size: $fz-default;
     line-height: 24px;
   }

@@ -1,4 +1,5 @@
-import {initAccordions} from './modules/accordion/init-accordion';
+import {initDynamicAdaptive} from './modules/dynamic-adaptive/init-dynamic-adaptive';
+import {initRepairSlider} from './modules/init-experts-slider';
 import {initTabs} from './modules/tabs/init-tabs';
 import {iosVhFix} from './utils/ios-vh-fix';
 
@@ -8,10 +9,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   initTabs();
-  initAccordions();
+  initDynamicAdaptive();
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
+    initRepairSlider();
   });
 });
 

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" tabs="IE=edge" />
-    <meta name="viewport" tabs="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" tabs="Тестовое задание">
     <title>RUS2-test</title>
     <link rel="stylesheet" href="css/style.min.css">
@@ -13,6 +13,7 @@
       <header class="header">
         <div class="header__container container">
           <div class="header__top">
+            <button class="header__burger" type="button" aria-label="Открыть/закрыть меню"></button>
             <a class="header__logo" href="/" class="header__logo">
               <img src="/img/svg/logo.svg" width="97" height="51" alt="Логотип">
             </a>
@@ -85,7 +86,7 @@
           <div class="container">
             <div class="intro__header">
               <h1 class="title title--h1">Услуги и&nbsp;сервисы</h1>
-              <ul class="intro__buttons">
+              <ul class="intro__buttons" data-da=".header__container, 768, last">
                 <li class="intro__button intro__button--request">
                   <a href="#"><span>Оставить заявку</span></a>
                 </li>
@@ -188,11 +189,85 @@
         </section>
 
         <section class="repair">
-
+          <h2 class="title title--h2">Ремонт техники различных брендов</h2>
+          <div class="container">
+            <div class="repair__slider swiper" data-repair-slider>
+              <ul class="repair__slides swiper-wrapper">
+                <li class="repair__slide swiper-slide">
+                  <div class="repair__slide-item">
+                    <div class="repair__slide-logo">
+                      <img class="swiper-lazy" src="/img/repair/logo-1.webp" width="108" height="32" alt="Логотип">
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <a href="#" target="_blank" rel="nofollow noopenner noreferrer"><span class="visually-hidden">Перейти на страницу компании</span></a>
+                  </div>
+                  <div class="repair__slide-item">
+                    <div class="repair__slide-logo">
+                      <img class="swiper-lazy" src="/img/repair/logo-2.webp" width="108" height="32" alt="Логотип">
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <a href="#" target="_blank" rel="nofollow noopenner noreferrer"><span class="visually-hidden">Перейти на страницу компании</span></a>
+                  </div>
+                  <div class="repair__slide-item">
+                    <div class="repair__slide-logo">
+                      <img class="swiper-lazy" src="/img/repair/logo-3.webp" width="108" height="32" alt="Логотип">
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <a href="#" target="_blank" rel="nofollow noopenner noreferrer"><span class="visually-hidden">Перейти на страницу компании</span></a>
+                  </div>
+                  <div class="repair__slide-item">
+                    <div class="repair__slide-logo">
+                      <img class="swiper-lazy" src="/img/repair/logo-4.webp" width="108" height="32" alt="Логотип">
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <a href="#" target="_blank" rel="nofollow noopenner noreferrer"><span class="visually-hidden">Перейти на страницу компании</span></a>
+                  </div>
+                </li>
+                <li class="repair__slide swiper-slide">
+                  <div class="repair__slide-item">
+                    <div class="repair__slide-logo">
+                      <img class="swiper-lazy" src="/img/repair/logo-5.webp" width="108" height="32" alt="Логотип">
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <a href="#" target="_blank" rel="nofollow noopenner noreferrer"><span class="visually-hidden">Перейти на страницу компании</span></a>
+                  </div>
+                  <div class="repair__slide-item">
+                    <div class="repair__slide-logo">
+                      <img class="swiper-lazy" src="/img/repair/logo-6.webp" width="108" height="32" alt="Логотип">
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <a href="#" target="_blank" rel="nofollow noopenner noreferrer"><span class="visually-hidden">Перейти на страницу компании</span></a>
+                  </div>
+                  <div class="repair__slide-item">
+                    <div class="repair__slide-logo">
+                      <img class="swiper-lazy" src="/img/repair/logo-7.webp" width="108" height="32" alt="Логотип">
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <a href="#" target="_blank" rel="nofollow noopenner noreferrer"><span class="visually-hidden">Перейти на страницу компании</span></a>
+                  </div>
+                  <div class="repair__slide-item">
+                    <div class="repair__slide-logo">
+                      <img class="swiper-lazy" src="/img/repair/logo-8.webp" width="108" height="32" alt="Логотип">
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                    <a href="#" target="_blank" rel="nofollow noopenner noreferrer"><span class="visually-hidden">Перейти на страницу компании</span></a>
+                  </div>
+                </li>
+              </ul>
+              <div class="swiper-pagination"></div>
+            </div>
+            <a class="repair__link" href="#">Показать все</a>
+          </div>
         </section>
       </main>
       <footer class="footer">
-        <div class="container"></div>
+        <div class="container">
+          <div class="footer__wrapper">
+            <p>&copy;&nbsp;2019&nbsp;CPS<br>Разработано командой Apesong</p>
+            <p>Политика конфиденциальности</p>
+            <p>Информация, размещенная на&nbsp;данной странице, не&nbsp;является публичной офертой</p>
+          </div>
+        </div>
       </footer>
     </div>
 

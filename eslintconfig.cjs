@@ -75,7 +75,6 @@ module.exports = {
     'no-return-assign': 'error',
     'no-script-url': 'error',
     'no-sequences': 'error',
-    'no-unused-expressions': 'error',
     radix: 'error',
 
     // Variables

@@ -1,0 +1,78 @@
+.repair {
+  &__slider {
+    margin-bottom: size(24px);
+  }
+
+  .repair__slides {
+  }
+
+  &__slide {
+    display: grid;
+    grid-template-columns: repeat(2, calc((100% - 32px) / 2));
+    gap: size(16px) 32px;
+  }
+
+  &__slide-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 size(16px);
+    height: size(72px);
+    background-color: $color-default-white;
+    border-radius: size(6px);
+    border: size(1px) solid $whisper;
+
+    a {
+      width: size(40px);
+      height: size(40px);
+      border-radius: 50%;
+      border: size(2px) solid $violet-red;
+      background-image: url("/img/svg/arrow.svg");
+      background-repeat: no-repeat;
+      background-size: size(8px) size(12px);
+      background-position: center;
+      transition: opacity $trans-default;
+      flex-shrink: 0;
+
+      @include hover-focus {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &__slide-logo {
+    height: size(52px);
+    width: auto;
+    max-width: size(128px);
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  &__link {
+    font-size: size(16px);
+    line-height: size(24px);
+    letter-spacing: size(-0.2px);
+    display: flex;
+    align-items: center;
+    gap: size(8px);
+    transition: opacity $trans-default;
+
+    @include hover-focus {
+      opacity: 0.7;
+    }
+
+    &::before {
+      content: "";
+      width: size(24px);
+      height: size(24px);
+      flex-shrink: 0;
+      background-image: url("/img/svg/expand.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      transform-origin: center;
+      transition: transform $trans-default;
+    }
+  }
+}
