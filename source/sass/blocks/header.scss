@@ -1,0 +1,219 @@
+.header {
+  padding: size(30px) 0;
+
+  &__container {
+    padding: 0 size(24px);
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: size(20px);
+    margin-bottom: size(46px);
+  }
+
+  &__logo {
+    width: size(97px);
+    aspect-ratio: 97 / 51;
+    flex-shrink: 0;
+  }
+
+  &__search {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: size(10px);
+
+    input {
+      width: 0;
+      padding: 0;
+      border: none;
+      transition: width $trans-default;
+      outline: none;
+
+      &:focus {
+        width: calc(100% - size(50px));
+        padding: size(5px);
+        border: size(1px) solid $violet-red;
+        border-radius: size(6px);
+      }
+    }
+
+    label {
+      width: size(40px);
+      height: size(40px);
+      border-radius: 50%;
+      background-color: $violet-red;
+      background-image: url("/img/svg/search.svg");
+      background-repeat: no-repeat;
+      background-size: size(17px) size(17px);
+      background-position: center;
+      cursor: pointer;
+      margin-left: auto;
+      flex-shrink: 0;
+      transition: opacity $trans-default;
+
+      @include hover-focus {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &__nav {
+    margin-bottom: size(240px);
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: size(28px);
+  }
+
+  &__nav-item {
+    a {
+      font-size: size(16px);
+      line-height: size(24px);
+      letter-spacing: size(-0.2px);
+      transition: opacity $trans-default;
+
+      @include hover-focus {
+        opacity: 0.7;
+      }
+    }
+
+    &--current {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: size(-22px);
+        top: 0;
+        min-height: 100%;
+        width: size(4px);
+        background-color: $turquoise;
+        border-radius: size(2px);
+      }
+
+      a {
+        color: $storm-grey;
+        pointer-events: none;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: size(16px);
+    margin-bottom: size(17px);
+  }
+
+  &__button {
+    display: flex;
+    flex-shrink: 0;
+
+    a {
+      display: flex;
+      transition: opacity $trans-default;
+
+      @include hover-focus {
+        opacity: 0.7;
+      }
+
+      &::before {
+        content: "";
+        width: size(40px);
+        height: size(40px);
+        border-radius: 50%;
+        background-color: $violet-red;
+        background-repeat: no-repeat;
+        background-position: center;
+        flex-shrink: 0;
+      }
+    }
+
+
+    &--phone {
+      a {
+        &::before {
+          background-image: url("/img/svg/phone.svg");
+          background-size: size(18px) size(19px);
+        }
+      }
+    }
+
+    &--mail {
+      a {
+        &::before {
+          background-image: url("/img/svg/mail.svg");
+          background-size: size(20px) size(21px);
+        }
+      }
+    }
+
+    &--user {
+      a {
+        &::before {
+          background-image: url("/img/svg/user.svg");
+          background-size: size(20px) size(19px);
+        }
+      }
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: size(12px);
+    margin-bottom: size(41px);
+  }
+
+  &__contacts-link {
+    transition: opacity $trans-default;
+
+    @include hover-focus {
+      opacity: 0.7;
+    }
+
+    &--mail {
+      font-size: size(16px);
+      line-height: size(24px);
+      letter-spacing: size(-0.2px);
+    }
+
+    &--phone {
+      font-size: size(24px);
+      line-height: size(32px);
+      font-weight: 700;
+      letter-spacing: size(-0.6px);
+    }
+  }
+
+  &__language {
+    display: flex;
+    align-items: center;
+    gap: size(7px);
+  }
+
+  &__language-radio {
+    font-size: size(16px);
+    line-height: size(24px);
+    letter-spacing: size(-0.2px);
+
+    input:checked {
+      & + label {
+        color: $storm-grey;
+      }
+    }
+
+    label {
+      cursor: pointer;
+      transition: color $trans-default, opacity $trans-default;
+
+      @include hover-focus {
+        opacity: 0.7;
+      }
+    }
+  }
+}
