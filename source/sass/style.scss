@@ -1,6 +1,6 @@
 // Vendor
-// Swiper 8.4.7
-// @import "vendor/swiper";
+@import "vendor/data-accordion";
+@import "vendor/data-tabs";
 
 // Global
 @import "global/variables";
@@ -14,8 +14,10 @@
 @import "global/container";
 
 // Blocks
+@import "blocks/title";
 @import "blocks/btn";
 @import "blocks/header";
+@import "blocks/intro";
 
 // ---------------------------------
 

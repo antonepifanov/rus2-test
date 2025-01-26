@@ -1,0 +1,10 @@
+.title {
+  font-weight: 700;
+  margin: 0;
+
+  &--h1 {
+    font-size: size(28px);
+    line-height: size(40px);
+    letter-spacing: size(-0.6px);
+  }
+}

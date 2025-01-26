@@ -1,0 +1,167 @@
+.intro {
+  padding: size(42px) 0;
+  margin-bottom: size(50px);
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: size(8px);
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: size(32px);
+  }
+
+  &__button {
+    a {
+      display: flex;
+      align-items: center;
+      gap: size(9px);
+      font-size: size(16px);
+      line-height: size(24px);
+      letter-spacing: size(-0.2px);
+      transition: opacity $trans-default;
+
+      @include hover-focus {
+        opacity: 0.7;
+      }
+
+      &::after {
+        content: "";
+        width: size(40px);
+        height: size(40px);
+        border-radius: 50%;
+        background-color: $violet-red;
+        background-repeat: no-repeat;
+        background-position: center;
+        flex-shrink: 0;
+      }
+    }
+
+
+    &--request {
+      a {
+        &::after {
+          background-image: url("/img/svg/request.svg");
+          background-size: size(20px) size(20px);
+        }
+      }
+    }
+
+    &--status {
+      a {
+        &::after {
+          background-image: url("/img/svg/status.svg");
+          background-size: size(16px) size(20px);
+        }
+      }
+    }
+  }
+
+  &__tabs-controls {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: size(10px);
+    margin-bottom: size(7px);
+  }
+
+  &__tabs-control {
+    flex-grow: 1 ;
+
+    button {
+      display: grid;
+      place-items: center;
+      padding: size(8px) size(16px);
+      background-color: $color-transparent;
+      border: size(2px) solid $color-transparent;
+      border-radius: size(6px);
+      font-size: size(16px);
+      line-height: size(24px);
+      letter-spacing: size(-0.2px);
+      color: $storm-grey;
+      cursor: pointer;
+      transition: background-color $trans-default, border $trans-default;
+
+      @include hover-focus {
+        background-color: $color-default-white;
+      }
+
+      &.is-active {
+        background-color: $color-default-white;
+        border: size(2px) solid $water-leaf;
+      }
+    }
+  }
+
+  &__tabs-item {
+    display: flex;
+    align-items: flex-start;
+    gap: size(36px);
+  }
+
+  &__tabs-text {
+    display: flex;
+    flex-direction: column;
+    gap: size(15px);
+
+    p {
+      font-size: size(14px);
+      line-height: size(20px);
+      font-weight: 400;
+      letter-spacing: size(0.2px);
+    }
+
+    details {
+      &[open] {
+        summary {
+          &::before {
+            transform: rotate(180deg);
+          }
+        }
+      }
+
+      summary {
+        font-size: size(16px);
+        line-height: size(24px);
+        letter-spacing: size(-0.2px);
+        display: flex;
+        align-items: center;
+        gap: size(8px);
+        cursor: pointer;
+        transition: opacity $trans-default;
+
+        @include hover-focus {
+          opacity: 0.7;
+        }
+
+        &::before {
+          content: "";
+          width: size(24px);
+          height: size(24px);
+          flex-shrink: 0;
+          background-image: url("/img/svg/expand.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          transform-origin: center;
+          transition: transform $trans-default;
+        }
+      }
+    }
+  }
+
+  &__tabs-image {
+    width: 47%;
+    aspect-ratio: 531 / 307;
+    border-radius: size(6px);
+    overflow: hidden;
+    flex-shrink: 0;
+
+    img {
+      object-fit: cover;
+    }
+  }
+}
