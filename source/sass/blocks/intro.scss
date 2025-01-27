@@ -2,11 +2,20 @@
   padding: size(42px) 0;
   margin-bottom: size(50px);
 
+  @include _768 {
+    padding: 24px 0;
+    margin-bottom: 32px;
+  }
+
   &__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: size(8px);
+
+    @include _768 {
+      margin-bottom: 32px;
+    }
   }
 
   &__buttons {
@@ -85,16 +94,30 @@
     }
   }
 
+  &__tabs {
+    overflow: visible;
+  }
+
   &__tabs-controls {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: size(10px);
     margin-bottom: size(7px);
+
+    @include _768 {
+      flex-wrap: nowrap;
+      gap: 0;
+      overflow: auto;
+      margin: 0 -24px;
+      padding: 0 24px;
+      margin-bottom: 32px;
+    }
   }
 
   &__tabs-control {
     flex-grow: 1 ;
+    flex-shrink: 0;
 
     button {
       display: grid;
@@ -125,6 +148,11 @@
     display: flex;
     align-items: flex-start;
     gap: size(36px);
+
+    @include _576 {
+      flex-direction: column;
+      gap: 16px;
+    }
   }
 
   &__tabs-text {
@@ -183,6 +211,12 @@
     border-radius: size(6px);
     overflow: hidden;
     flex-shrink: 0;
+
+    @include _576 {
+      width: 100vw;
+      margin: 0 -16px;
+      border-radius: 0;
+    }
 
     img {
       object-fit: cover;

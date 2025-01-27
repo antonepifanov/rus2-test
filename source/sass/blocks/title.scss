@@ -17,6 +17,15 @@
       top: 0;
       background-color: $turquoise;
       border-radius: size(2px);
+
+      @include _768 {
+        left: -24px;
+        border-radius: 0 4px 4px 0;
+      }
+
+      @include _576 {
+        left: -16px;
+      }
     }
   }
 
@@ -31,5 +40,14 @@
     border-top: size(1px) solid $clear-day;
     background: linear-gradient(90deg, $white-smoke 0%, $color-default-white 98.61%);
     margin-bottom: size(24px);
+
+    @include _768 {
+      padding: 16px 24px;
+    }
+
+    @include _576 {
+      padding: 16px;
+      margin-bottom: 16px;
+    }
   }
 }

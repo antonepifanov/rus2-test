@@ -6,17 +6,17 @@ export const initRepairSlider = () => {
     watchOverflow: true,
     lazy: true,
     breakpoints: {
-      768: {
-        slidesPerView: 2,
+      769: {
+        slidesPerView: 4,
         spaceBetween: 32,
       },
-      576: {
-        slidesPerView: 1.5,
+      577: {
+        slidesPerView: 3,
         spaceBetween: 24,
       },
       0: {
-        slidesPerView: 0.3,
-        spaceBetween: 18,
+        slidesPerView: 0.7,
+        spaceBetween: 16,
       },
     },
     pagination: {

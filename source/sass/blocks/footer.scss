@@ -1,5 +1,10 @@
 .footer {
   padding: size(25px) 0;
+  border-top: size(1px) solid $clear-day;
+
+  @include _576 {
+    padding: 16px 0;
+  }
 
   &__wrapper {
     display: grid;
@@ -11,13 +16,27 @@
     color: $storm-grey;
     text-align: center;
 
+    @include _576 {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
     p {
       &:first-child {
         text-align: left;
+
+        @include _576 {
+          text-align: center;
+        }
       }
 
       &:last-child {
         text-align: right;
+
+        @include _576 {
+          text-align: center;
+        }
       }
     }
   }

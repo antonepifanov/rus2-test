@@ -7,6 +7,7 @@
   min-height: 100vh;
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
+  overflow: hidden;
 
   @include _768 {
     display: flex;
@@ -70,6 +71,12 @@
 .no-transition {
   /* stylelint-disable-next-line */
   transition: none !important;
+}
+
+.mob-hidden {
+  @include _576 {
+    display: none;
+  }
 }
 
 .js-focus-visible :focus:not(.focus-visible) {

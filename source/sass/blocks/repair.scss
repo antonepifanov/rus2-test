@@ -1,15 +1,30 @@
 .repair {
+  padding-bottom: size(20px);
+
   &__slider {
     margin-bottom: size(24px);
+
+    @include _576 {
+      padding: 0 16px;
+      margin: 0 -16px;
+    }
   }
 
-  .repair__slides {
+  &__slides {
+    @include _576 {
+      margin-bottom: 16px;
+    }
   }
 
   &__slide {
-    display: grid;
-    grid-template-columns: repeat(2, calc((100% - 32px) / 2));
-    gap: size(16px) 32px;
+    display: flex;
+    flex-direction: column;
+    gap: size(16px);
+
+    @include _576 {
+      flex-direction: row;
+      gap: 16px;
+    }
   }
 
   &__slide-item {
@@ -21,6 +36,12 @@
     background-color: $color-default-white;
     border-radius: size(6px);
     border: size(1px) solid $whisper;
+    gap: size(10px);
+
+    @include _576 {
+      min-width: 240px;
+      flex-grow: 1;
+    }
 
     a {
       width: size(40px);
@@ -48,6 +69,25 @@
 
   .swiper-pagination {
     display: none;
+
+    @include _576 {
+      display: flex;
+      position: static;
+      justify-content: center;
+    }
+
+    .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      flex-shrink: 0;
+      background-color: #fff;
+      background-color: $gainsboro;
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: $mischka;
+    }
   }
 
   &__link {
@@ -58,6 +98,10 @@
     align-items: center;
     gap: size(8px);
     transition: opacity $trans-default;
+
+    @include _576 {
+      display: none;
+    }
 
     @include hover-focus {
       opacity: 0.7;
