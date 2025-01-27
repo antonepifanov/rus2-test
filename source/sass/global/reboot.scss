@@ -155,3 +155,11 @@ button {
   padding: 0;
   border: none;
 }
+
+details > summary::marker {
+  display: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}

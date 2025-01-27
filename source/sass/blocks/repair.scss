@@ -48,7 +48,7 @@
       height: size(40px);
       border-radius: 50%;
       border: size(2px) solid $violet-red;
-      background-image: url("/img/svg/arrow.svg");
+      background-image: url("../img/svg/arrow.svg");
       background-repeat: no-repeat;
       background-size: size(8px) size(12px);
       background-position: center;
@@ -112,7 +112,7 @@
       width: size(24px);
       height: size(24px);
       flex-shrink: 0;
-      background-image: url("/img/svg/expand.svg");
+      background-image: url("../img/svg/expand.svg");
       background-repeat: no-repeat;
       background-size: contain;
       transform-origin: center;

@@ -1470,6 +1470,14 @@ button {
   border: none;
 }
 
+details > summary::marker {
+  display: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
 .wrapper {
   position: relative;
   max-width: 100%;
@@ -1676,7 +1684,7 @@ button {
   height: 2.5rem;
   border-radius: 50%;
   background-color: #FF3E79;
-  background-image: url("/img/svg/search.svg");
+  background-image: url("../img/svg/search.svg");
   background-repeat: no-repeat;
   background-size: 1.0625rem 1.0625rem;
   background-position: center;
@@ -1783,17 +1791,17 @@ button {
 }
 
 .header__button--phone a::before {
-  background-image: url("/img/svg/phone.svg");
+  background-image: url("../img/svg/phone.svg");
   background-size: 1.125rem 1.1875rem;
 }
 
 .header__button--mail a::before {
-  background-image: url("/img/svg/mail.svg");
+  background-image: url("../img/svg/mail.svg");
   background-size: 1.25rem 1.3125rem;
 }
 
 .header__button--user a::before {
-  background-image: url("/img/svg/user.svg");
+  background-image: url("../img/svg/user.svg");
   background-size: 1.25rem 1.1875rem;
 }
 
@@ -1945,12 +1953,12 @@ button {
 }
 
 .intro__button--request a::after {
-  background-image: url("/img/svg/request.svg");
+  background-image: url("../img/svg/request.svg");
   background-size: 1.25rem 1.25rem;
 }
 
 .intro__button--status a::after {
-  background-image: url("/img/svg/status.svg");
+  background-image: url("../img/svg/status.svg");
   background-size: 1rem 1.25rem;
 }
 
@@ -2065,7 +2073,7 @@ button {
   height: 1.5rem;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  background-image: url("/img/svg/expand.svg");
+  background-image: url("../img/svg/expand.svg");
   background-repeat: no-repeat;
   background-size: contain;
   -webkit-transform-origin: center;
@@ -2133,7 +2141,7 @@ button {
   height: 2.5rem;
   border-radius: 50%;
   border: 0.125rem solid #FF3E79;
-  background-image: url("/img/svg/arrow.svg");
+  background-image: url("../img/svg/arrow.svg");
   background-repeat: no-repeat;
   background-size: 0.5rem 0.75rem;
   background-position: center;
@@ -2196,7 +2204,7 @@ button {
   height: 1.5rem;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  background-image: url("/img/svg/expand.svg");
+  background-image: url("../img/svg/expand.svg");
   background-repeat: no-repeat;
   background-size: contain;
   -webkit-transform-origin: center;
@@ -2359,7 +2367,7 @@ button {
   }
 
   .header.is-open .header__burger {
-    background-image: url("/img/svg/close.svg");
+    background-image: url("../img/svg/close.svg");
     margin-right: 0;
   }
 
@@ -2417,7 +2425,7 @@ button {
     height: 40px;
     border-radius: 50%;
     background-color: #FF3E79;
-    background-image: url("/img/svg/burger.svg");
+    background-image: url("../img/svg/burger.svg");
     background-size: 18px 16px;
     background-repeat: no-repeat;
     background-position: center;

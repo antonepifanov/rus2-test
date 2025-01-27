@@ -78,7 +78,7 @@
     &--request {
       a {
         &::after {
-          background-image: url("/img/svg/request.svg");
+          background-image: url("../img/svg/request.svg");
           background-size: size(20px) size(20px);
         }
       }
@@ -87,7 +87,7 @@
     &--status {
       a {
         &::after {
-          background-image: url("/img/svg/status.svg");
+          background-image: url("../img/svg/status.svg");
           background-size: size(16px) size(20px);
         }
       }
@@ -195,7 +195,7 @@
           width: size(24px);
           height: size(24px);
           flex-shrink: 0;
-          background-image: url("/img/svg/expand.svg");
+          background-image: url("../img/svg/expand.svg");
           background-repeat: no-repeat;
           background-size: contain;
           transform-origin: center;

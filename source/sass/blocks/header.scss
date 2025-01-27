@@ -52,7 +52,7 @@
 
     .header__burger {
       @include _768 {
-        background-image: url("/img/svg/close.svg");
+        background-image: url("../img/svg/close.svg");
         margin-right: 0;
 
         &::after {
@@ -137,7 +137,7 @@
       height: 40px;
       border-radius: 50%;
       background-color: $violet-red;
-      background-image: url("/img/svg/burger.svg");
+      background-image: url("../img/svg/burger.svg");
       background-size: 18px 16px;
       background-repeat: no-repeat;
       background-position: center;
@@ -208,7 +208,7 @@
       height: size(40px);
       border-radius: 50%;
       background-color: $violet-red;
-      background-image: url("/img/svg/search.svg");
+      background-image: url("../img/svg/search.svg");
       background-repeat: no-repeat;
       background-size: size(17px) size(17px);
       background-position: center;
@@ -322,7 +322,7 @@
     &--phone {
       a {
         &::before {
-          background-image: url("/img/svg/phone.svg");
+          background-image: url("../img/svg/phone.svg");
           background-size: size(18px) size(19px);
         }
       }
@@ -331,7 +331,7 @@
     &--mail {
       a {
         &::before {
-          background-image: url("/img/svg/mail.svg");
+          background-image: url("../img/svg/mail.svg");
           background-size: size(20px) size(21px);
         }
       }
@@ -340,7 +340,7 @@
     &--user {
       a {
         &::before {
-          background-image: url("/img/svg/user.svg");
+          background-image: url("../img/svg/user.svg");
           background-size: size(20px) size(19px);
         }
       }
